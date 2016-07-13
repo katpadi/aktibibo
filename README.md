@@ -21,10 +21,10 @@ Or install it yourself as:
 ## Setup
 
 1. Create the necessary columns using a migration:
-    ```
-    rails generate migration add_activated_at_to_foo activated_at:datetime
-    rails generate migration add_deactivated_at_to_foo deactivated_at:datetime
-    ```
+
+        rails generate migration add_activated_at_to_foo activated_at:datetime
+        rails generate migration add_deactivated_at_to_foo deactivated_at:datetime
+
 2. Define that your model is "activatable":
 
     ```ruby
