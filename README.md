@@ -1,6 +1,6 @@
 # Aktibibo
 
-Aktibibo is a simple gem allows an ActiveRecord model instance to be set as active, inactive or deactivated using convenience methods.
+Aktibibo is a simple gem that allows an ActiveRecord model instance to be set as active, inactive or deactivated using convenience methods.
 
 ## Installation
 
@@ -22,8 +22,8 @@ Or install it yourself as:
 
 1. Create the necessary columns using a migration:
     ```
-        rails generate migration add_activated_at_to_foo activated_at:datetime
-        rails generate migration add_deactivated_at_to_foo deactivated_at:datetime
+    rails generate migration add_activated_at_to_foo activated_at:datetime
+    rails generate migration add_deactivated_at_to_foo deactivated_at:datetime
     ```
 2. Define that your model is "activatable":
 
