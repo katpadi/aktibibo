@@ -32,6 +32,7 @@ Or install it yourself as:
       activatable
     end
     ```
+
 ## Usage
 
 Let's say that an instance `foo` is available.
@@ -63,7 +64,7 @@ Foo.activated # Returns all the active foos
 Foo.deactivated # Returns all the deactivated foos
 ```
 
-### Activation and deactivation times are also accessible.
+### Activation and deactivation times are also accessible
 ```ruby
 foo.activated_at  # Fri, 29 Apr 2016 08:29:03 UTC +00:00
 foo.deactivated_at # nil
