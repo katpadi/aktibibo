@@ -44,6 +44,20 @@ describe Aktibibo do
     expect(foo.activated_at).to_not be_nil
   end
 
+  context 'Scopes' do
+    it 'Has inactive scope' do 
+      expect(Foo.inactive.count).to eq(3)
+    end
+    it 'Has active scope' do 
+      Foo.update_all(activated_at: Date.today-rand(10000))
+      expect(Foo.active.count).to eq(3)
+    end
+    it 'Has deactivated scope' do 
+      Foo.update_all(deactivated_at: Date.today-rand(10000))
+      expect(Foo.deactivated.count).to eq(3)
+    end
+  end  
+
   context 'It has non-bang methods' do
     it 'Does not raise error when deactivating deactivated' do 
       foo = Foo.first
