@@ -7,7 +7,7 @@ module Aktibibo
         scope :inactive, -> { where(activated_at: nil) }
         scope :active, -> { where.not(activated_at: nil) }
         scope :deactivated, -> { where.not(deactivated_at: nil) }
-      end      
+      end
     end
 
     def inactive?
@@ -30,7 +30,7 @@ module Aktibibo
     end
 
     def activate!
-      fail Aktibibo::Errors::AlreadyActivated if active?
+      fail Errors::AlreadyActivated if active?
       self.activated_at = Time.now.utc if inactive?
       self.deactivated_at = nil if deactivated?
       self.save!
@@ -43,7 +43,7 @@ module Aktibibo
     end
 
     def deactivate!
-      fail Aktibibo::Errors::AlreadyDeactivated if deactivated?
+      fail Errors::AlreadyDeactivated if deactivated?
       self.deactivated_at = Time.now.utc
       self.save!
     end

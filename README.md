@@ -32,6 +32,7 @@ Or install it yourself as:
       activatable
     end
     ```
+
 ## Usage
 
 Let's say that an instance `foo` is available.
@@ -51,7 +52,7 @@ Bang methods, on the other hand, will raise `AktibiboError` if activated while a
 
 ### Boolean methods
 ```ruby
-foo.active? 
+foo.active?
 foo.deactivated?
 foo.inactive?
 ```
@@ -63,18 +64,15 @@ Foo.activated # Returns all the active foos
 Foo.deactivated # Returns all the deactivated foos
 ```
 
-### Activation and deactivation times are also accessible.
+### Activation and deactivation times are also accessible
 ```ruby
 foo.activated_at  # Fri, 29 Apr 2016 08:29:03 UTC +00:00
 foo.deactivated_at # nil
 ```
-## Development
-TODO: Add args to set from the model if re-activation is allowed.
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/katpadi/aktibibo. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
 
 ## License
 
