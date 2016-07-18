@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["hello@katpadi.ph"]
 
   spec.summary       = %q{Aktibibo allows an ActiveRecord model instance to be set as active, inactive or deactivated using convenience methods.}
-  spec.description   = %q{Aktibibo allows an ActiveRecord model to be declared as "activatable". It provides scopes for filtering and convenience methods to set an instance as active, inactive or deactivated.}
+  spec.description   = %q{Aktibibo allows an ActiveRecord model to be declared as "activatable". It provides scopes for filtering and convenience methods to set an instance as active, inactive or deactivated. It also saves the activation and deactivation dates.}
   spec.homepage      = "https://github.com/katpadi/aktibibo"
   spec.license       = "MIT"
 
